@@ -1,0 +1,6 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="630" fill="#F7F9F8"/>
+<rect x="536" y="251" width="128" height="128" rx="32" fill="#73E1AC"/>
+<path d="M600 283L632 347H568L600 283Z" fill="white"/>
+<text x="600" y="450" font-family="Arial" font-weight="bold" font-size="48" fill="#242424" text-anchor="middle">Agrokapp</text>
+</svg>
