@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Quote, Star, ShieldCheck } from "lucide-react";
+import { Quote, Star, ShieldCheck, Plus } from "lucide-react";
 
 const testimonialsRow1 = [
   {
@@ -242,13 +242,13 @@ export default function SocialProof() {
           <div className="max-w-7xl mx-auto px-6 py-8">
             <p className="text-center text-gray-900 text-sm font-bold uppercase tracking-widest mb-8 opacity-80">Parceiros que confiam na Agrokapp</p>
           </div>
-          <div className="flex overflow-hidden relative py-6 border-y border-gray-200">
+          <div className="overflow-hidden relative py-4">
             <div className="flex w-max animate-scroll hover:[animation-play-state:paused]">
               {[...partners, ...partners, ...partners, ...partners].map((partner, index) => (
-                <div key={`partner-${index}`} className="relative w-[240px] h-32 flex items-center justify-center border-r border-gray-200 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 bg-gray-50/30 hover:bg-white group">
+                <div key={`partner-${index}`} className="relative w-[240px] h-32 flex items-center justify-center border-l border-y border-gray-200 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 bg-gray-50/30 hover:bg-white group">
                   {/* Plus markers - positioned exactly at corners */}
-                  <span className="absolute -top-3 -left-1.5 text-gray-400 font-light text-2xl z-10">+</span>
-                  <span className="absolute -bottom-4 -left-1.5 text-gray-400 font-light text-2xl z-10">+</span>
+                  <Plus strokeWidth={1.5} size={14} className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-gray-500 z-10" />
+                  <Plus strokeWidth={1.5} size={14} className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 text-gray-500 z-10" />
                   
                   {/* Logo text */}
                   <span className="text-2xl md:text-3xl font-display font-bold text-gray-400 group-hover:text-agrokapp-text transition-colors cursor-default">

@@ -8,9 +8,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
-            <div className="flex items-center gap-2 mb-6">
+            <Link to="/" className="flex items-center gap-2 mb-6 group">
               <img src="/logo.svg" alt="Agrokapp Logo" className="h-8 w-auto" />
-            </div>
+            </Link>
             <p className="text-gray-500 leading-relaxed text-sm mb-6">
               A plataforma definitiva para o agronegócio. Conectando quem produz com quem fornece, de forma simples e segura.
             </p>

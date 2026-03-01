@@ -4,7 +4,7 @@ import { FaApple, FaGooglePlay } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative pt-12 pb-12 md:pt-28 md:pb-28 overflow-hidden bg-agrokapp-bg bg-noise">
+    <section id="hero" className="relative pt-32 pb-12 md:pt-28 md:pb-28 overflow-hidden bg-agrokapp-bg bg-noise">
       {/* Abstract Background Shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 right-0 w-[80vw] h-[80vw] bg-gradient-to-br from-agrokapp-green/10 to-blue-50/10 rounded-full blur-[120px] translate-x-1/3 -translate-y-1/4 opacity-60 md:opacity-100"></div>

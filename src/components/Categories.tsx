@@ -50,7 +50,7 @@ export default function Categories() {
           </div>
         </div>
 
-        <div className="flex overflow-x-auto snap-x pb-8 -mx-6 px-6 md:mx-0 md:px-0 md:pb-0 md:grid md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6 no-scrollbar">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-6">
           {categories.map((cat, index) => (
             <motion.div
               key={index}
@@ -59,7 +59,7 @@ export default function Categories() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
               whileHover={{ y: -5 }}
-              className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-agrokapp-green/30 transition-all duration-300 cursor-pointer group flex flex-col items-start h-full relative overflow-hidden min-w-[160px] md:min-w-0 snap-center"
+              className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-agrokapp-green/30 transition-all duration-300 cursor-pointer group flex flex-col items-start h-full relative overflow-hidden w-full"
             >
               {/* Hover Gradient Background */}
               <div className="absolute inset-0 bg-gradient-to-br from-agrokapp-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -90,7 +90,7 @@ export default function Categories() {
               viewport={{ once: true }}
               transition={{ delay: categories.length * 0.05 }}
               whileHover={{ y: -5 }}
-              className="bg-gray-50 p-6 rounded-xl border border-dashed border-gray-300 hover:border-agrokapp-green hover:bg-white transition-all duration-300 cursor-pointer flex flex-col items-center justify-center gap-2 group h-full min-h-[160px]"
+              className="bg-gray-50 p-6 rounded-xl border border-dashed border-gray-300 hover:border-agrokapp-green hover:bg-white transition-all duration-300 cursor-pointer flex flex-col items-center justify-center gap-2 group h-full min-h-[160px] w-full"
             >
               <div className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:border-agrokapp-green group-hover:text-agrokapp-green transition-colors">
                 <span className="font-bold text-xs">+15</span>
